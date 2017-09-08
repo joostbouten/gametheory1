@@ -83,7 +83,7 @@ The following matrix now remains:
 \end{tabular}
 
 From this game we can see that \textbf{c} is weakly dominated by \textbf{b}, after
-deleting \textbf{c} we find that \textbf{C} is strictly dominated \textbf{B}. The
+deleting \textbf{c} we find that \textbf{C} is strictly dominated by \textbf{B}. The
 remaining cell is \textbf{[B,b]}, based on deleting dominated
 strategies the recommended strategy would be to play \textbf{B} for
 player 1 and \textbf{b} for player 2.
@@ -99,7 +99,7 @@ The second mover has no incentive to choose as the outcome for the second mover 
 In the case that weakly dominated strategies can be deleted simultaneously, the outcome will be \textbf{[B,R]}.
 \subsubsection{Problem 3}\label{problem-3}
 
-One solution is first deleting strictly dominated strategy \textbf{H} for
+One solution is first deleting strictly dominated strategy \textbf{H\textsubscript{1}} (dom. by \textbf{O\textsubscript{1}}) for
 player one, which leaves the matrix
 
 \begin{tabular}{| c | c |}
@@ -110,15 +110,15 @@ player one, which leaves the matrix
   \hline  
 \end{tabular}
 
-In this matrix, we can now delete weakly dominated strategy \textbf{T} for
-player two. Lastly we can delete strictly dominated strategy \textbf{T}
+In this matrix, we can now delete weakly dominated strategy \textbf{T\textsubscript{2}} (dom. by \textbf{H\textsubscript{2}}) for
+player two. Lastly we can delete strictly dominated strategy \textbf{T\textsubscript{1}} (dom. by \textbf{O\textsubscript{1}})
 for player one, leaving the cell \textbf{[O,H]} as our first possible
 solution.
 
 Another solution is starting with deleting strictly dominated strategy
-\textbf{T} for player one. Then deleting weakly dominated strategy
-\textbf{H} for player two and lastly deleting strictly dominated strategy
-\textbf{H} for player one, leaving the second possible solution \textbf{[O,T]}.
+\textbf{T\textsubscript{1}} (dom. by \textbf{O\textsubscript{1}}) for player one. Then deleting weakly dominated strategy
+\textbf{H\textsubscript{2}} (dom. by \textbf{T\textsubscript{2}}) for player two and lastly deleting strictly dominated strategy
+\textbf{H\textsubscript{1}} (dom. by \textbf{O\textsubscript{1}}) for player one, leaving the second possible solution \textbf{[O,T]}.
 
 \subsubsection{Problem 4}\label{problem-4}
 
@@ -158,19 +158,27 @@ players. The best responses of player 1 and player 2 never intersect, therefore 
 
 \paragraph{(b)}\label{b}
 
-There exists a Nash equilibrium in mixed strategies if the expected
-payoff of each cell is equal. 
+To check whether $[(\frac{1}{2},\frac{1}{2}),(\frac{1}{2},\frac{1}{2})] $ is a Nash equilibrium in mixed strategies we will solve the following system of equations:
 
-To check whether $[(\frac{1}{2},\frac{1}{2}),(\frac{1}{2},\frac{1}{2})] $ is a Nash equilibrium in mixed strategies we will solve for $\sigma$ in the following  equation. $\sigma$ denotes the percentage of times A is played. We have two utility functions for player 1 which we set equal to each other to find the equilibrium value of $\sigma$. The first utility function is the utility for player 1 if player 2 chooses to play \textbf{a}. The second utility function is the utility for player 1 if player 2 plays \textbf{b}.  \\
+Player 2's strategy: $\sigma_2=(q,1-q),0\leq q\leq 1$.
 
-$
-U_a=\sigma(1)+(1-\sigma)(-1)=U_b=\sigma(-1)+(1-\sigma)(1) $\\
-\\
-Solving for $\sigma$ we find:
-$\sigma=\frac{1}{2}$
+$u_1(A,\sigma_2)=1\cdot q-1(1-q)=2q-1$\\
+$u_1(B,\sigma_2)=-1\cdot q+1(1-q)=1-2q$
 
-We can do the same for player 2, but since this game is the same for player 2 this will yield the same outcome. Thus leading to the Nash equilibrium indeed being $[(\frac{1}{2},\frac{1}{2}),(\frac{1}{2},\frac{1}{2})] $.
+If there is a Nash equilibrium then player 1 randomizes between both of her pure strategies. Player 1 must be indifferent between both of her strategy choices:
 
+If $2q-1=1-2q$ then $q=\frac{1}{2}$
+
+Player 1's strategy: $\sigma_1=(p,1-p),0\leq p\leq 1$.
+
+$u_2(\sigma_1,a)=-1\cdot p+1(1-p)=1-2p$\\
+$u_2(\sigma_1,b)=1\cdot p-1(1-p)=2p-1$
+
+If there is a Nash equilibrium then player 2 randomizes between both of her pure strategies. Player 2 must be indifferent between both of her strategy choices:
+
+If $2p-1=1-2p$ then $p=\frac{1}{2}$
+
+Therefore indeed, $\sigma=(\sigma_1,\sigma_2)=((\frac{1}{2},\frac{1}{2}),(\frac{1}{2},\frac{1}{2}))$ is a Nash equilibrium in mixed strategies.  
 
 \subsubsection{Problem 6}\label{problem-6}
 
