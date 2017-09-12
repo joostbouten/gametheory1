@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.26)  11 SEP 2017 23:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.26)  12 SEP 2017 11:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -935,36 +935,67 @@ Overfull \hbox (0.79063pt too wide) in paragraph at lines 67--67
  [][] 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 70.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 71.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 71.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 71.
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--86
+
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 92.
 [1
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 70.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 92.
 
 (./Gametheoryset2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 70.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 70.
-Package rerunfilecheck Info: File `Gametheoryset2.out' has not changed.
-(rerunfilecheck)             Checksum: AEEC506009A005C1707F001E0739ED8B;92.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 70.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 92.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 92.
+
+
+Package rerunfilecheck Warning: File `Gametheoryset2.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Gametheoryset2.out':
+(rerunfilecheck)             Before: AEEC506009A005C1707F001E0739ED8B;92
+(rerunfilecheck)             After:  17B9AD18C4464C1422C71FEDE16F6A7F;184.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 92.
  ) 
 Here is how much of TeX's memory you used:
- 11022 strings out of 492995
- 159388 string characters out of 6132704
- 250089 words of memory out of 5000000
- 14440 multiletter control sequences out of 15000+600000
- 29346 words of font info for 43 fonts, out of 8000000 for 9000
+ 11080 strings out of 492995
+ 160208 string characters out of 6132704
+ 255089 words of memory out of 5000000
+ 14477 multiletter control sequences out of 15000+600000
+ 41792 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  32i,6n,38p,239b,335s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/
-texlive/2017/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/20
-17/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2017/texmf-di
-st/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/ty
-pe1/public/lm/lmr17.pfb>
-Output written on Gametheoryset2.pdf (1 page, 86957 bytes).
+{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/
+texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/20
+17/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2017/texmf-d
+ist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2017/texmf-dist/fonts/
+enc/dvips/lm/lm-ec.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/l
+m/lmbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmex10.p
+fb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/l
+ocal/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi5.pfb></usr/local/texliv
+e/2017/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/local/texlive/2017/texm
+f-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2017/texmf-dist/font
+s/type1/public/lm/lmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/pub
+lic/lm/lmr17.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr5
+.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/l
+ocal/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texli
+ve/2017/texmf-dist/fonts/type1/public/lm/lmsy7.pfb>
+Output written on Gametheoryset2.pdf (1 page, 164478 bytes).
 PDF statistics:
- 35 PDF objects out of 1000 (max. 8388607)
- 27 compressed objects within 1 object stream
- 3 named destinations out of 1000 (max. 500000)
- 8201 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 74 PDF objects out of 1000 (max. 8388607)
+ 58 compressed objects within 1 object stream
+ 4 named destinations out of 1000 (max. 500000)
+ 10249 words of extra memory for PDF output out of 12000 (max. 10000000)
 

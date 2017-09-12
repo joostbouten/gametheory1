@@ -58,7 +58,7 @@
 \author{Group 10: J. Bouten; T. Vissers; F. Strik; J. Bonthuis; M. Kroes}
 
 \date{22 September, 2017}
-\title{Game Theory 1: Problem Set 1}
+\title{Game Theory 1: Problem Set 2}
 
 \begin{document}
 
@@ -66,5 +66,27 @@
 %\section{Problem Set 2}\label{problem-set-2}
 
 \subsubsection{Problem 1}\label{problem1}
+
+Homogeneous cost levels:\\
+$\pi_i=(100-q_i-q_{-i}-20)q_i=80q_i-q_iq_{-i}-q_i^2$\\ 
+FOC: $\frac{\partial\pi_i}{\partial q_i}=80q_i-q_{-i}-2q_i=0 \rightarrow q_i=40-\frac{1}{2}q_{-i}$
+
+Therefore: $q_i=40-\frac{1}{2}(40-\frac{1}{2}q_{i})  \rightarrow q_i=\frac{80}{3}$
+\\ 
+Thus the Nash equilibrium in the homogeneous cost model is $(q_1,q_2)=(\frac{80}{3},\frac{80}{3})$
+\\ $HHI_{old}=\left(\frac{1}{2}\right)^2\cdot2=\frac{1}{2}$\\ \\
+Heterogeneous cost levels: \\ $\pi_1=70q_1-q_1q_2-q_1^2$\\
+FOC: $\frac{\partial\pi_1}{\partial q_1}=70q_1-q_2-2q_1=0 \rightarrow q_1=35-\frac{1}{2}q_2 $\\
+$\pi_2=90q_2-q_1q_2-q_2^2$\\
+FOC: $\frac{\partial\pi_2}{\partial q_2}=90-q_1-2q_2=0 \rightarrow q_2=45-\frac{1}{2}q_1$\\
+$q_1=35-\frac{1}{2}(45-\frac{1}{2}q_1) \rightarrow q_1=\frac{50}{3}$\\
+$q_2=45-\frac{1}{2}\cdot\frac{50}{3} \rightarrow q_2=\frac{110}{3}$\\
+Thus the Nash equilibrium in the heterogeneous cost model is $(q_1,q_2)=(\frac{50}{3},\frac{110}{3})$\\
+$HHI_{new}=\left(\frac{5}{16}\right)^2+\left(\frac{11}{16}\right)^2=\frac{73}{128}>\frac{1}{2}$
+
+The Herfidahl-Hirschmann Index is now larger than it was before, the market concentration has become larger. 
+
+\subsubsection{Problem 2}\label{problem2}
+
 
 \end{document}
