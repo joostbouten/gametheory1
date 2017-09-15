@@ -1,5 +1,8 @@
-\documentclass[]{article}
+\documentclass[a4paper]{article}
+\usepackage{geometry}
+\textwidth = 426pt
 \usepackage{lmodern}
+\usepackage{enumerate}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
 \usepackage{fixltx2e} % provides \textsubscript
@@ -69,9 +72,8 @@
 
 Homogeneous cost levels:\\
 $\pi_i=(100-q_i-q_{-i}-20)q_i=80q_i-q_iq_{-i}-q_i^2$\\ 
-FOC: $\frac{\partial\pi_i}{\partial q_i}=80q_i-q_{-i}-2q_i=0 \rightarrow q_i=40-\frac{1}{2}q_{-i}$
-
-Therefore: $q_i=40-\frac{1}{2}(40-\frac{1}{2}q_{i})  \rightarrow q_i=\frac{80}{3}$
+FOC: $\frac{\partial\pi_i}{\partial q_i}=80q_i-q_{-i}-2q_i=0 \rightarrow q_i=40-\frac{1}{2}q_{-i}$\\
+Symmetry: $q_i=q_j \rightarrow q_i=40-\frac{1}{2}(q_i)  \rightarrow q_i=\frac{80}{3}$
 \\ 
 Thus the Nash equilibrium in the homogeneous cost model is $(q_1,q_2)=(\frac{80}{3},\frac{80}{3})$
 \\ $HHI_{old}=\left(\frac{1}{2}\right)^2\cdot2=\frac{1}{2}$\\ \\
@@ -87,6 +89,23 @@ $HHI_{new}=\left(\frac{5}{16}\right)^2+\left(\frac{11}{16}\right)^2=\frac{73}{12
 The Herfidahl-Hirschmann Index is now larger than it was before, the market concentration has become larger. 
 
 \subsubsection{Problem 2}\label{problem2}
+
+\subsubsection{Problem 3}\label{problem3}
+\begin{enumerate}[\textbf{(a)}]
+\item
+$\pi_i=p_iq_i-F=q_i-q_i^2-\theta q_i \sum\limits_{j\ne i} q_j-F$\\
+FOC:$ \frac{\partial\pi_i}{\partial q_i}=1-2q_i-\theta\sum\limits_{j\ne i}q_j=0 \rightarrow q_i=\frac{1}{2}-\frac{\theta}{2}\sum\limits_{j \ne i}q_j$\\
+Symmetry: $q_i=q_j \rightarrow q_i=\frac{1}{2}-\frac{\theta}{2}(n-1)q_i \rightarrow q_i=\frac{1}{2+\theta(n-1)}$
+\\Symmetric Nash equilibrium: $(q_i^*)=(\frac{1}{2+\theta(n-1)})$
+\item
+Firms will enter as long as they can generate positive profits by entering the market. This then determines the number of firms that will enter.\\
+We find the equilibrium number of firms ($n^*$) by setting profits ($\pi_i(q_i,q_j,n,\theta)=\pi_i(q_i^*,q_i^*,n,\theta)$) equal to $0$ and then solving for $n$.\\
+$\pi_i=\left(\frac{1}{2+\theta(n-1)}\right)\left(1-(\theta(n-1)+1)\left(\frac{1}{2+\theta(n-1)}\right)\right)-F=0$
+$\rightarrow n=$
+
+\end{enumerate}
+
+\subsubsection{Problem 4}\label{problem4}
 
 
 \end{document}
