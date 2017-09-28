@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.26)  28 SEP 2017 15:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.26)  28 SEP 2017 21:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1124,24 +1124,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 239--240
  []
 
 [4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 283.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 260.
  [5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 283.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 260.
  (./Gametheoryset3.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 283.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 283.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 260.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 260.
 Package rerunfilecheck Info: File `Gametheoryset3.out' has not changed.
 (rerunfilecheck)             Checksum: 17B9AD18C4464C1422C71FEDE16F6A7F;184.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 283.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 260.
  ) 
 Here is how much of TeX's memory you used:
- 11687 strings out of 492995
- 169465 string characters out of 6132704
- 275875 words of memory out of 5000000
- 15044 multiletter control sequences out of 15000+600000
- 48462 words of font info for 70 fonts, out of 8000000 for 9000
+ 11697 strings out of 492995
+ 169593 string characters out of 6132704
+ 274875 words of memory out of 5000000
+ 15048 multiletter control sequences out of 15000+600000
+ 54607 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 32i,12n,38p,336b,434s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 32i,12n,38p,652b,434s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local
 /texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2
 017/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2017/texmf-dist
@@ -1157,7 +1157,7 @@ c/lm/lmr17.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr5.p
 fb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/loc
 al/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive
 /2017/texmf-dist/fonts/type1/public/lm/lmsy7.pfb>
-Output written on Gametheoryset3.pdf (5 pages, 175080 bytes).
+Output written on Gametheoryset3.pdf (5 pages, 177305 bytes).
 PDF statistics:
  98 PDF objects out of 1000 (max. 8388607)
  79 compressed objects within 1 object stream
