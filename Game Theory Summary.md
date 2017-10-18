@@ -80,7 +80,11 @@ If only the strategies $(s_1, ..., s_I^*)$ survive iterated elimination of stric
 -
 
 -
-Given a player $i$'s pure strategy set $S_i$, a *mixed strategy* $\sigma_i$
+Given a player $i$'s pure strategy set $S_i$, a *mixed strategy* $\sigma_i$ assigns to each pure strategy $s_i\in S_i$ a probability $\sigma_i(s_i)\ge 0$ that it will be played with.
 
 -
+
+A mixed strategy profile $\sigma^*=(\sigma_1^,...,\sigma_I^*)$ constitutes a Nash equilibrium of game $\Gamma_N$ if for every $i$,
+$$u_i(\sigma_i^*,\sigma_{-i}^*)\ge u_i(\sigma_i',\sigma_{-i}^*) \text{ for all }\sigma_i'\in (S_i)$$
+
 
