@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.26)  22 OCT 2017 19:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.26)  23 OCT 2017 11:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -862,7 +862,7 @@ Package: footnote 1997/01/28 1.13 Save footnotes around boxes
 (/usr/local/texlive/2017/texmf-dist/tex/latex/parskip/parskip.sty
 Package: parskip 2001/04/09 non-zero parskip adjustments
 )
-No file Gametheory2set1.aux.
+(./Gametheory2set1.aux)
 \openout1 = `Gametheory2set1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
@@ -879,6 +879,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
 LaTeX Font Info:    ... okay on input line 69.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 69.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 69.
+
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
@@ -954,6 +955,8 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 69.
 LaTeX Info: Redefining \pageref on input line 69.
 LaTeX Info: Redefining \nameref on input line 69.
+
+(./Gametheory2set1.out) (./Gametheory2set1.out)
 \@outlinefile=\write3
 \openout3 = `Gametheory2set1.out'.
 
@@ -1034,29 +1037,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 134--135
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 148.
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--151
+
+ []
+
 [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 148.
+Underfull \hbox (badness 10000) in paragraph at lines 160--162
+
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 167.
+[3]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 167.
  (./Gametheory2set1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 148.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 148.
-
-
-Package rerunfilecheck Warning: File `Gametheory2set1.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Gametheory2set1.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  4D2583A979CD3CD637A2F012E1D0C58D;92.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 148.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 167.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 167.
+Package rerunfilecheck Info: File `Gametheory2set1.out' has not changed.
+(rerunfilecheck)             Checksum: 4D2583A979CD3CD637A2F012E1D0C58D;92.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 167.
  ) 
 Here is how much of TeX's memory you used:
- 11661 strings out of 492995
- 169154 string characters out of 6132704
- 269737 words of memory out of 5000000
- 15037 multiletter control sequences out of 15000+600000
- 42240 words of font info for 65 fonts, out of 8000000 for 9000
+ 11675 strings out of 492995
+ 169332 string characters out of 6132704
+ 269841 words of memory out of 5000000
+ 15039 multiletter control sequences out of 15000+600000
+ 42323 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  32i,10n,38p,389b,474s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/lo
@@ -1072,10 +1078,10 @@ dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/
 type1/public/lm/lmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/publi
 c/lm/lmr17.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmr7.p
 fb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
-Output written on Gametheory2set1.pdf (2 pages, 137498 bytes).
+Output written on Gametheory2set1.pdf (3 pages, 142737 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
- 55 compressed objects within 1 object stream
- 7 named destinations out of 1000 (max. 500000)
- 10241 words of extra memory for PDF output out of 12000 (max. 10000000)
+ 80 PDF objects out of 1000 (max. 8388607)
+ 65 compressed objects within 1 object stream
+ 11 named destinations out of 1000 (max. 500000)
+ 10249 words of extra memory for PDF output out of 12000 (max. 10000000)
 
