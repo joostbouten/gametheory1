@@ -3,7 +3,7 @@
 \textwidth = 426pt
 \usepackage{lmodern}
 \usepackage{array}
-
+\usepackage{tabularx}
 \usepackage{multirow}
 \usepackage{enumerate}
 \usepackage{amssymb,amsmath}
@@ -61,17 +61,108 @@
 \def\fps@figure{htbp}
 \makeatother
 
-\author{Group 10: J. Bouten, T. Vissers}
+\author{Group 10: Joost Bouten, Twan Vissers}
 
 \date{25 October, 2017}
-\title{Game Theory 1: Problem Set 1}
+\title{Game Theory 2: Problem Set 1}
 
 \begin{document}
 
 \maketitle
 %\section{Problem Set 1}\label{problem-set-1}
+\subsubsection{Problem 1}
+\begin{enumerate}[(a)]
+\item
+Action spaces:\\
+$A_A=[0,1]$\\
+$A_T=\{accept,\ reject\}$\\
+$A_T=[0,1]$ which represents a cutoff above which to accept the bid $y$.\\
+\\
+Type spaces:\\
+$\Theta_A=E(x)$, i.e. $A$ only has one state of nature.\\
+$\Theta_T=x=[0,1]$\\
+
+Strategies:\\
+$s_A:\Theta_A\rightarrow A_A$\\
+A strategy for $A$ represents an action (bid $y$) given its expectation of firm $T$'s value $x$
+\\ 
+$s_T: \Theta_T \times A_A \rightarrow A_T$\\ A strategy for $T$ represents an action $accept$ or $reject$ given firm $T$'s value $x$ and given the bid $y$ of $A$, chosen from its action space $A_A$. 
+\\ \\
+Beliefs:\\
+Player $A$'s beliefs about $T$'s types are given by the cumulative probability distribution function $F(x)=x(2-x)$
+\\
+Player $T$ is certain of the player $A$'s type, it knows exactly what $A$ expects firm $T$'s value to be. 
+\\
+\\
+Payoff functions:\\
+$u_A=\begin{cases}
+2x-y & \quad \text{if }
+s_T=accept\\
+0 & \quad \text{if } s_T=reject
+\end{cases}
+$
+\\
+$u_T=\begin{cases}
+y & \quad \text{if }
+s_T=accept\\
+x & \quad \text{if } s_T=reject
+\end{cases}
+$
+\\
+\item
+The expected value of firm $T$ is equal to the expected value of the probability density function of $F(x)$:
+
+$E(x)=\int_0^1x\cdot f(x)dx \text{ with } f(x)=\frac{\partial F(x)}{\partial x}(2x-x^2)=2-2x$\\
+$E(x)=\int_0^1\left(2x-2x^2\right)dx=\left[x^2-\frac{2}{3}x^3\right]_0^1=\frac{1}{3}$
+
+Thus, the (unconditional) expected value of firm $T$ equals $\dfrac{1}{3}$.
+\\
+\item
+$A$'s expected value of firm $T$ if firm $T$ accepts the bid is given by:\\
+$E(x|x\le y)=\left(\int_0^yx\cdot f(x)dx\right)\big/F(y)=\dfrac{y-\frac{2}{3}y^2}{2-y}$\\
+
+Given this expectation, the expectation of $A$'s utility given that bid $y$ is accepted is:\\
+$E(u_A)=E(2x-y|x\le y)=2\cdot E(x|x\le y)-y=2\cdot\dfrac{y-\frac{2}{3}y^2}{2-y}-y$\\
+$E(u_A)=\dfrac{2y-\frac{4}{3}y^2}{2-y}-\dfrac{y(2-y)}{2-y}=\dfrac{-\frac{1}{3}y^2}{2-y}$\\
+$FOC: \dfrac{\partial E(u_A)}{\partial y}=\dfrac{-\frac{2}{3}y(2-y)-\frac{1}{3}y^2}{(2-y)^2}=0 \iff y=0 \vee y=4$
+
+As can be concluded from the first order criterium, it is optimal for firm $A$ to bid $y=0$ As this will yield the maximum payoff. Furthermore, $y=4$ will result in a mimimum and is thus not a solution of the maximization problem.
+
+In the Bayesian Nash equilibrium of the game, there will be no trade and the equilibrium bid is $y=0$, which will never be accepted by firm $T$. 
+\item
+The logic behind the equilibrium is called adverse selection because due to a lack of information an undesired result (no trade) will follow from the game, even though trade could benefit both $A$ and $T$.
+
+\end{enumerate}
+\subsubsection{Problem 2}
+\begin{enumerate}[(a)]
+\item
+\textsubscript{­}­\(\Theta_{i} = \{ c_{L},\ c_{H}\}\) for
+\(i = 1,\ 2\).
+
+Firm \(i\) being of the low cost type \(c_{L}\) occurs with probability
+\(v\) while firm \(i\) being of the high cost type \(c_{H}\) occurs with
+probability \(1 - v\).
 
 
+\item \(A_{i} = \left\{ q_{i} \right\}\) for \(i = 1,\ 2\).
+
+\item The strategy for firm\(\text{\ i}\) can be described as follows:
+Given the type of firm $i$, firm $i$ chooses an appropriate action for each possible action of the other firm $j$.\\
+i.e. \(s_{i}:\ \ \ \ \ \ \Theta_{i} \times A_{j} \rightarrow A_{i}\ \text{, where }i\ne j \)
+\item
+$\pi_1=\left(a-q_1-q_2-v\cdot c_L- (1-v)\cdot c_H\right)q_1$\\
+$\frac{\partial\pi_1}{\partial q_1}=a-2q_1-q_2-v\cdot c_L-(1-v)\cdot c_H=0 \iff q_1=b_1(q_2)=\frac{1}{2}(a-q_2-v\cdot c_L-(1-v)\cdot c_H)$\\ \\
+Similarly, $q_2=b_2(q_1)=\frac{1}{2}(a-q_1-v\cdot c_L-(1-v)\cdot c_H)$
+\\
+We can substitute for $q_2$ in $b_1(q_2)$:
+\\
+$q_1=\frac{1}{2}(a-\frac{1}{2}(a-q_1-v\cdot c_L-(1-v)\cdot c_H)-v\cdot c_L-(1-v)\cdot c_H)$\\
+$\frac{3}{4}q_1=\frac{1}{4}(a-v\cdot c_L-(1-v)\cdot c_H)\iff q_1=\frac{1}{3}(a-v\cdot c_L-(1-v)\cdot c_H)$\\
+\\ We can similarly calculate $q_2$.
+\\
+Thus the symmetric Bayesian Nash equilibrium of this game is:
+$$q_i=\frac{1}{3}(a-v\cdot c_L-(1-v)\cdot c_H) \text{ for } i=1,2$$
+\end{enumerate}
 
 \subsubsection{Problem 3}
 \begin{enumerate}[(a)]
@@ -107,12 +198,12 @@ $$(D, C),(C,D) $$
 
 Checking for a mixed strategy equilibrium:
 
-$$u_1(C)=0$$
+$$u_1(C, \sigma_2)=0$$
 $$u_1(D,\sigma_2)=\sigma_{2C}\cdot R+(1-\sigma_{2C})\cdot\left(\dfrac{R}{2}-k_H\right)$$
-$$u_1(C)=u_1(D,\sigma_2) \iff \sigma_{2C}=\dfrac{2k_H-R}{2k_H+R}$$
+$$u_1(C, \sigma_2)=u_1(D,\sigma_2) \iff \sigma_{2C}=\dfrac{2k_H-R}{2k_H+R}$$
 
 Similarly for player 2:
-$$u_2(C)=u_2(\sigma_1,D) \iff \sigma_{1C}=\dfrac{2k_H-R}{2k_H+R}$$
+$$u_2(\sigma_1, C)=u_2(\sigma_1,D) \iff \sigma_{1C}=\dfrac{2k_H-R}{2k_H+R}$$
 
 Thus there is one mixed strategy nash equilibruim:
 
@@ -125,8 +216,8 @@ We can see that for player 2, the strategy $C$ is strictly dominated by $D$. The
 {\renewcommand{\arraystretch}{2}
 \begin{tabular}{cc|c|}
       & \multicolumn{1}{c}{} & \multicolumn{1}{c}{Player $2$}\\
-      & \multicolumn{1}{c}{} & \multicolumn{1}{c}{$C$}   \\\cline{3-3}
-      \multirow{2}*{Player $1$}  & $C$ & $0,R$ \\\cline{3-3}
+      & \multicolumn{1}{c}{} & \multicolumn{1}{c}{$D$}   \\\cline{3-3}
+      \multirow{2}*{Player $1$}  & $C$ & $\underline{0},R$ \\\cline{3-3}
       & $D$  & $\dfrac{R}{2}-k_H,\dfrac{R}{2}-k_L$ \\\cline{3-3}
 \end{tabular}
 }
@@ -151,17 +242,44 @@ $\Theta_2=\{k_L,k_H\}$\\
 
 Action spaces:
 
-$A_1=\{head\ on,\ swerve\ right\}$\\
-$A_2=\{head\ on,\ swerve\ right\}$
+$A_i=\{C,D\}=\{swerve\ right,\ head\ on\} \text{ for }i=1,2$\\
+
 
 \item
 A strategy for player 1 in this game is a function $s_1$ that specifies with which probabilities to drive head on or swerve right given its type $k_H$.
 
 A strategy for player 2 in this game is a function $s_2$ that specifies with which probabilities to drive head on or swerve right for each of its possible types $k_L$ and $k_H$.
 \\ \\
-That is, $$s_i:\Theta_i\rightarrow A_i$$
+That is, $$s_i:\Theta_i\rightarrow A_i \text{ for } i=1,2$$
 
 \item
 
+{\renewcommand{\arraystretch}{2}
+\begin{tabularx}{\textwidth}{cc|c|c|c|c|} 
+      & \multicolumn{1}{c}{} & \multicolumn{4}{c}{\textbf{2}}\\
+      & \multicolumn{1}{c}{} & \multicolumn{1}{c}{$C,C$}  & \multicolumn{1}{c}{$C,D$}& \multicolumn{1}{c}{$D,C$} & \multicolumn{1}{c}{$D,D$}\\
+\cline{3-6}
+      \multirow{3}*{\textbf{1}}  & $C$ & $0,0$ & $0, (1-p)R$ & $0,p R$ & $\underline{0},\underline{R}$ \\
+\cline{3-6}
+      & \multirow{2}*{$D$} & $\underline{R},$ & $p R+(1-p)({\dfrac{R}{2}-k_H}) $,  & $p({\dfrac{R}{2}-k_H})+(1-p) R$,  & ${\dfrac{R}{2}-k_H}$, \\
+&&$0$	&	$(1-p)({\dfrac{R}{2}-k_H})$ & $\underline{p({\dfrac{R}{2}-k_L})}$ &$p {\dfrac{R}{2}-k_L}+(1-p){\dfrac{R}{2}-k_H}$  \\\cline{3-6}
+
+\end{tabularx}
+}\\  \\ \\
+By inspection we find the following pure strategy Bayesian Nash equilibrium (PS-BNE) for this game, as underlined in the table above:
+$(C, DD)$
+\\ \\
+However, there could be a situation in which there exists another PS-BNE where player 1 plays D and player 2 plays DC. This can only be the case if the following condition holds:
+$$p\cdot\left({\dfrac{R}{2}-k_H}\right)+(1-p)\cdot R \ge 0$$
+In case that the condition is satisfied, then $(C,DD)$ and $(D,DC)$ are both perfect strategy Bayesian Nash equilibria. If the condition is not satisfied, only $(C,DD)$ will be a PS-BNE of this Game of Chicken.
+
+Furthermore we can calculate the Bayesian Nash equilibrium in mixed strategies, let $x$ be the probability of player 1 playing $C$, let $y$ be the probability of player 2 playing $C$. If player 2 is of type $k_L$, it will always choose to play $D$, if player 2 is of type $k_H$ it could mix between the two strategies as we have seen in question 3 (b).
+\\ \\
+The MSE is thus of the form:
+$$\left(s_1;s_2(k_L),s_2(k_H)\right)=\left(D \text{ with prob. }x; D, D\text{ with prob. }y\right)$$
+Where $y$ satisfies: $$(1-y)R +y\cdot\left(\frac{R}{2}-k_H\right)=0$$
+$$\Rightarrow y=\dfrac{2R}{2k_H+R}$$\\ 
+And where $x$ satisfies: $$p\left(\frac{R}{2}-k_H\right)+(1-p)\left(x\cdot R+(1-x)\left(\frac{R}{2}-k_H\right)\right)=0$$
+$$\Rightarrow x=\dfrac{2k_H-R}{(1-p)(2k_H+R)}$$
 \end{enumerate}
 \end{document}
